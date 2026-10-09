@@ -1,0 +1,780 @@
+{
+  "schema": "anticloud.bench17/1",
+  "project": "OPENMOC",
+  "category": "NUCLEAR",
+  "run_timestamp_utc": "2026-10-05T14:23:16Z",
+  "runner": "E:/opencode-work/tier_agents/_tools/bl_common.py + bl_run.py",
+  "clone_dir_name": "UPSTREAM_CLONE",
+  "clone_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\NUCLEAR\\OPENMOC\\UPSTREAM_CLONE",
+  "excluded_by_policy": [
+    "all AI/LLM latency and throughput benchmarks",
+    "no model downloaded; pytorch/torch/transformers never imported"
+  ],
+  "status": "BENCHMARKED",
+  "benchmarks": {
+    "01_loc_file_counts": {
+      "status": "MEASURED",
+      "total_files_in_tree": 688,
+      "walk_truncated_at_cap": false,
+      "source_and_doc_files_counted": 365,
+      "files_skipped_over_4mb": 0,
+      "total_loc": 70824,
+      "blank_lines": 17310,
+      "comment_lines": 16522,
+      "sloc_estimate": 54302,
+      "primary_language": "C++",
+      "primary_language_loc": 38281,
+      "languages": [
+        {
+          "language": "C++",
+          "loc": 38281,
+          "files": 55
+        },
+        {
+          "language": "Python",
+          "loc": 19589,
+          "files": 184
+        },
+        {
+          "language": "C/C++ Header",
+          "loc": 7423,
+          "files": 49
+        },
+        {
+          "language": "reStructuredText",
+          "loc": 5043,
+          "files": 69
+        },
+        {
+          "language": "Make",
+          "loc": 359,
+          "files": 2
+        },
+        {
+          "language": "Text",
+          "loc": 62,
+          "files": 3
+        },
+        {
+          "language": "Shell",
+          "loc": 48,
+          "files": 2
+        },
+        {
+          "language": "Dockerfile",
+          "loc": 19,
+          "files": 1
+        }
+      ],
+      "files_by_extension": {
+        ".py": 184,
+        ".rst": 69,
+        ".cpp": 55,
+        ".h": 49,
+        ".txt": 3,
+        ".mk": 2,
+        ".sh": 2,
+        ".dockerfile": 1
+      },
+      "method": "physical line count of every code/doc file in the real clone"
+    },
+    "02_licence_detection": {
+      "status": "MEASURED",
+      "id": "MIT",
+      "file": "LICENSE",
+      "confidence": "high",
+      "text_bytes": 1112,
+      "sha256": "45a1484e5baaf95f",
+      "copyright_years": [
+        "2012",
+        "2023"
+      ],
+      "copyright_holders": [
+        "2012-2023"
+      ],
+      "non_commercial_signal": null,
+      "licence_class": "A",
+      "class_basis": "MIT verified in LICENSE",
+      "class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+      "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+      "packaging_declarations": [],
+      "licence_files_examined": [
+        {
+          "file": "LICENSE",
+          "bytes": 1112,
+          "kind": "licence_text"
+        },
+        {
+          "file": "CMakeLists.txt",
+          "bytes": 875,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "setup.py",
+          "bytes": 15885,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "docs/source/license.rst",
+          "bytes": 1153,
+          "kind": "licence_text"
+        }
+      ],
+      "licence_files_examined_count": 4,
+      "default_rule": "unknown or absent licence = class C, never A",
+      "method": "licence text read from the tree and matched against the SPDX-style grant text"
+    },
+    "03_dependency_scan": {
+      "status": "MEASURED",
+      "manifests": [
+        {
+          "manifest": "CMakeLists.txt",
+          "ecosystem": "cmake",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "setup.cfg",
+          "ecosystem": "pypi",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "setup.py",
+          "ecosystem": "pypi",
+          "declared": 32,
+          "sample": [
+            "-D",
+            "-DGCC",
+            "-DNVCC",
+            ".cpp",
+            ".cu",
+            "0.4.0",
+            "USE_SETUPTOOLS",
+            "bgxlc",
+            "build",
+            "build_ext",
+            "clang",
+            "clean",
+            "compiler_so",
+            "coverage-mode",
+            "cuda",
+            "debug-mode",
+            "double",
+            "gcc",
+            "icpc",
+            "install",
+            "linker_exe",
+            "linker_so",
+            "mpicc",
+            "nvcc",
+            "openmoc"
+          ]
+        },
+        {
+          "manifest": "docs/Makefile",
+          "ecosystem": "make",
+          "declared": 1,
+          "sample": [
+            "qcollectiongenerator"
+          ]
+        },
+        {
+          "manifest": "profile/Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        }
+      ],
+      "manifest_count": 5,
+      "ecosystems": {
+        "cmake": 0,
+        "pypi": 32,
+        "make": 1
+      },
+      "declared_packages_total": 33,
+      "lockfiles_on_disk": [],
+      "lockfile_count": 0,
+      "reproducible_build_evidence": false,
+      "method": "manifests parsed from the real tree"
+    },
+    "04_sbom": {
+      "status": "MEASURED",
+      "format": "CycloneDX 1.5",
+      "component_count": 99,
+      "components_with_purl": 99,
+      "artifact": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\NUCLEAR\\OPENMOC\\sbom\\sbom.cdx.json",
+      "serial_number": "urn:uuid:bc7053d5-0000-0000-4000-0f2400dbd34f",
+      "licence_asserted_in_sbom": "MIT",
+      "licence_class_in_sbom": "A",
+      "method": "dependency manifests actually present in the working tree; zero imports invented"
+    },
+    "05_git_health": {
+      "status": "MEASURED",
+      "is_git_clone": true,
+      "head_sha": "c9ac4e1ecc9c13bacb44fd470f7fce8c9355606f",
+      "head_short": "c9ac4e1ecc9c",
+      "head_date": "2024-07-18T18:03:10-06:00",
+      "head_subject": "Merge pull request #487 from mit-crpg/GiudGiud-patch-1",
+      "head_author": "Guillaume Giudicelli <g_giud@mit.edu>",
+      "remote_url": "https://github.com/mit-crpg/openmoc",
+      "is_shallow": true,
+      "commits_in_clone": 1,
+      "tracked_files": 723,
+      "local_and_remote_branches": 3,
+      "tags": 0,
+      "working_tree_dirty_entries": 0,
+      "ci_config": [
+        ".travis.yml"
+      ],
+      "ci_present": true,
+      "method": "git plumbing run against the on-disk repo"
+    },
+    "06_security_config_owasp_llm_top10": {
+      "status": "MEASURED",
+      "upstream_security_files": 0,
+      "project_security_files": 123,
+      "total_evidence_files": 123,
+      "upstream_examples": [],
+      "project_examples": [
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.docx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.html",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pdf",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pptx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt"
+      ],
+      "llm_specific_artifacts": [],
+      "method": "inventory of real security/audit/threat artefacts in clone and Anticommons folder"
+    },
+    "07_security_config_owasp_top10": {
+      "status": "MEASURED",
+      "evidence_file_count": 21,
+      "files": [
+        "OFFICIAL_BENCHMARKS/03_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.docx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.html",
+        "OFFICIAL_BENCHMARKS/05_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pdf",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pptx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.txt",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.docx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.html",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.json",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.md",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.txt",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.docx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.html",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.json",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.md",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.txt"
+      ],
+      "note": "OWASP Top 10 coverage is evidenced by security policy and audit artefacts that exist on disk; absent files are reported as absent, never asserted"
+    },
+    "08_soc1": {
+      "status": "MEASURED",
+      "control_family": "soc1",
+      "evidence_file_count": 5,
+      "evidence_score": 15,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/03_SOC1.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc1",
+        "soc1",
+        "soc1"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "09_soc2_typeii": {
+      "status": "MEASURED",
+      "control_family": "soc2_typeii",
+      "evidence_file_count": 8,
+      "evidence_score": 33,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.json",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.txt",
+        "OFFICIAL_BENCHMARKS/02_SOC2.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "10_nist_ai_rmf": {
+      "status": "MEASURED",
+      "control_family": "nist_ai_rmf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.json",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.md",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.txt",
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt"
+      ],
+      "matched_tokens_top": [
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "11_nist_sp800_53": {
+      "status": "MEASURED",
+      "control_family": "nist_sp800_53",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.json",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.md",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.txt"
+      ],
+      "matched_tokens_top": [
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "12_nist_csf": {
+      "status": "MEASURED",
+      "control_family": "nist_csf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.json",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.md",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.txt",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.md",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.txt",
+        "15_DISASTER_RECOVERY/README.md"
+      ],
+      "matched_tokens_top": [
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "13_fedramp": {
+      "status": "MEASURED",
+      "control_family": "fedramp",
+      "evidence_file_count": 8,
+      "evidence_score": 24,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.json",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.md",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.txt"
+      ],
+      "matched_tokens_top": [
+        "fedramp",
+        "fedramp",
+        "fedramp"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "14_pci_dss": {
+      "status": "MEASURED",
+      "control_family": "pci_dss",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.json",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.md",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.txt"
+      ],
+      "matched_tokens_top": [
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "15_iso27001": {
+      "status": "MEASURED",
+      "control_family": "iso27001",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.json",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.md",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.txt"
+      ],
+      "matched_tokens_top": [
+        "iso_27001",
+        "iso_27001",
+        "iso_27001"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "16_mitre_attack_mapping": {
+      "status": "MEASURED",
+      "control_family": "mitre_attack",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.json",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.md",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.txt"
+      ],
+      "matched_tokens_top": [
+        "mitre",
+        "mitre",
+        "mitre"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "17_ml_trl_readiness": {
+      "status": "MEASURED",
+      "framework": "Lavin, Weidner & Claus, 'Quantifying the maturity of machine learning for life sciences', Nature Methods 19, 1036-1039 (2022); TRL scale adapted for software/engineering artefacts",
+      "trl_level": 7,
+      "trl_scale": "1 = basic R&D idea; 9 = actual system proven in successful operations",
+      "level_reasons": [
+        "source tree present (design realised in code)",
+        "test files present (component validation)",
+        "packaging manifest + >10 test files",
+        ">25 test files + deployment config",
+        "CI pipeline + deploy config + >3 docs"
+      ],
+      "evidence": {
+        "test_files": 45,
+        "test_examples": [
+          "tests/input_set.py",
+          "tests/pickle-rcparams.py",
+          "tests/run_tests.py",
+          "tests/testing_harness.py",
+          "tests/travis.sh",
+          "tests/update_results.py",
+          "tests/test_1d_gradient/test_1d_gradient.py",
+          "tests/test_2d_gradient/test_2d_gradient.py"
+        ],
+        "source_files": 45,
+        "source_examples": [
+          ".gitignore",
+          "config.py",
+          "Dockerfile",
+          "LICENSE",
+          "setup.py",
+          "docs/Makefile",
+          "docs/doxygen/doxy2swig.py",
+          "docs/doxygen/Doxyfile"
+        ],
+        "packaging_manifests": 1,
+        "packaging_examples": [
+          "setup.py"
+        ],
+        "deployment_files": 1,
+        "deployment_examples": [
+          "Dockerfile"
+        ],
+        "documentation_files": 45,
+        "documentation_examples": [
+          "README.rst",
+          "docs/source/developers.rst",
+          "docs/source/index.rst",
+          "docs/source/license.rst",
+          "docs/source/publications.rst",
+          "docs/source/quickinstall.rst"
+        ],
+        "ci_config": [
+          ".travis.yml"
+        ],
+        "sbom_artifact": true,
+        "security_policy_files": 123,
+        "security_policy_examples": []
+      },
+      "measured_from": "the cloned working tree file inventory, not from any project self-claim"
+    },
+    "00_shape_k_graphrag": {
+      "status": "PASS",
+      "checks_present": [
+        "01_loc_file_counts",
+        "02_licence_detection",
+        "03_dependency_scan",
+        "04_sbom",
+        "05_git_health",
+        "06_security_config_owasp_llm_top10",
+        "07_security_config_owasp_top10",
+        "08_soc1",
+        "09_soc2_typeii",
+        "10_nist_ai_rmf",
+        "11_nist_sp800_53",
+        "12_nist_csf",
+        "13_fedramp",
+        "14_pci_dss",
+        "15_iso27001",
+        "16_mitre_attack_mapping",
+        "17_ml_trl_readiness"
+      ],
+      "check_count": 17,
+      "required_15_present": true,
+      "mitre_present": true,
+      "trl_present": true,
+      "no_ai_latency_bench": true,
+      "no_torch_import": true,
+      "shape": "K_GRAPHRAG",
+      "threshold_source": "structural (check count and presence), never lowered",
+      "wall_seconds": 236.6
+    }
+  },
+  "source_anchors_read": {
+    "entry_points": [
+      "setup.py",
+      "openmoc/__init__.py",
+      "openmoc/compatible/__init__.py",
+      "openmoc/cuda/__init__.py"
+    ],
+    "src_dirs": [
+      ".gitignore",
+      "config.py",
+      "Dockerfile",
+      "LICENSE",
+      "setup.py",
+      "docs/Makefile",
+      "docs/doxygen/doxy2swig.py",
+      "docs/doxygen/Doxyfile",
+      "docs/source/conf.py",
+      "openmoc/checkvalue.py",
+      "openmoc/krylov.py",
+      "openmoc/log.py",
+      "openmoc/materialize.py",
+      "openmoc/opencg_compatible.py",
+      "openmoc/options.py",
+      "openmoc/plotter.py",
+      "openmoc/process.py",
+      "openmoc/subdivider.py",
+      "openmoc/__init__.py",
+      "openmoc/compatible/casmo.py",
+      "openmoc/compatible/opencg_compatible.py",
+      "openmoc/compatible/__init__.py",
+      "openmoc/cuda/__init__.py",
+      "profile/Makefile",
+      "profile/results/base_makefile",
+      "profile/results/compile-and-run.py",
+      "profile/results/strip_file.py",
+      "sample-input/c5g7-mgxs-hdf5.py",
+      "sample-input/bundled-lattice/bundled-lattice-2d.py",
+      "sample-input/bundled-lattice/bundled-lattice-3d.py",
+      "sample-input/bundled-lattice/geometry.py",
+      "sample-input/cosine-source/cosine-source.py",
+      "sample-input/gradients/cube.py",
+      "sample-input/grid-spacer/grid-spacer.py",
+      "sample-input/homogeneous/geometry.py",
+      "sample-input/homogeneous/homogeneous-2d.py",
+      "sample-input/homogeneous/homogeneous-3d.py",
+      "sample-input/krylov/adjoint-eigenmodes.py",
+      "sample-input/krylov/forward-eigenmodes.py",
+      "sample-input/krylov/geometry.py",
+      "sample-input/nested-lattice/geometry.py",
+      "sample-input/nested-lattice/nested-lattice-2d.py",
+      "sample-input/nested-lattice/nested-lattice-3d.py",
+      "sample-input/pin-cell/geometry.py",
+      "sample-input/pin-cell/pin-cell-3d.py"
+    ],
+    "tests": [
+      "tests/input_set.py",
+      "tests/pickle-rcparams.py",
+      "tests/run_tests.py",
+      "tests/testing_harness.py",
+      "tests/travis.sh",
+      "tests/update_results.py",
+      "tests/test_1d_gradient/test_1d_gradient.py",
+      "tests/test_2d_gradient/test_2d_gradient.py",
+      "tests/test_2d_gradient_linear_source/test_2d_gradient_linear_source.py",
+      "tests/test_adjoint_hom_inf_medium/test_adjoint_hom_inf_medium.py",
+      "tests/test_adjoint_pin_cell/test_adjoint_pin_cell.py",
+      "tests/test_adjoint_simple_lattice/test_adjoint_simple_lattice.py",
+      "tests/test_axial_segmentation/test_axial_segmentation.py",
+      "tests/test_calculate_boundaries/test_calculate_boundaries.py",
+      "tests/test_cmfd_axial_interpolation_average/test_cmfd_axial_interpolation_average.py",
+      "tests/test_cmfd_axial_interpolation_centroid/test_cmfd_axial_interpolation_centroid.py",
+      "tests/test_cmfd_check_balance/test_cmfd_check_balance.py",
+      "tests/test_cmfd_linear_source/test_cmfd_linear_source.py",
+      "tests/test_cmfd_periodic_boundaries/test_cmfd_periodic_boundary.py",
+      "tests/test_cmfd_print_ratios/test_cmfd_print_ratios.py",
+      "tests/test_cmfd_pwr_assembly/test_cmfd_pwr_assembly.py",
+      "tests/test_cmfd_restart/test_cmfd_restart.py",
+      "tests/test_cmfd_vacuum_boundary/test_cmfd_vacuum_boundary.py",
+      "tests/test_complex_region_bounds/test_complex_region_bounds.py",
+      "tests/test_compute_flux/test_compute_flux.py",
+      "tests/test_compute_source/test_compute_source.py",
+      "tests/test_find_cell/test_find_cell.py",
+      "tests/test_fixed_linear_source/test_fixed_linear_source.py",
+      "tests/test_forward_3D_lattice/test_forward_3D_lattice.py",
+      "tests/test_forward_3D_lattice_70g/test_forward_3D_lattice_70g.py",
+      "tests/test_forward_3D_lattice_CMFD/test_forward_3D_lattice_CMFD.py",
+      "tests/test_forward_3D_lattice_linear/test_forward_3D_lattice_linear.py",
+      "tests/test_forward_3D_lattice_linear_70g/test_forward_3D_lattice_linear_70g.py",
+      "tests/test_forward_3D_lattice_symmetry/test_forward_3D_lattice_symmetry.py",
+      "tests/test_forward_hom_inf_medium/test_forward_hom_inf_medium.py",
+      "tests/test_forward_pin_cell/test_forward_pin_cell.py",
+      "tests/test_forward_pin_cell_70g/test_forward_pin_cell_70g.py",
+      "tests/test_forward_simple_lattice/test_forward_simple_lattice.py",
+      "tests/test_geometry_dump/test_geometry_dump.py",
+      "tests/test_geometry_load/test_geometry_load.py",
+      "tests/test_geometry_load_non_uniform_lattice/test_geometry_load_non_uniform_lattice.py",
+      "tests/test_geometry_print/test_geometry_print.py",
+      "tests/test_get_num_cells/test_num_cells.py",
+      "tests/test_krylov_adjoint/test_krylov_adjoint.py",
+      "tests/test_krylov_forward/test_krylov_forward.py"
+    ],
+    "deployment": [
+      "Dockerfile"
+    ],
+    "build": [
+      "CMakeLists.txt",
+      "docs/Makefile",
+      "profile/Makefile",
+      "profile/results/base_makefile"
+    ],
+    "docs": [
+      "README.rst",
+      "docs/source/developers.rst",
+      "docs/source/index.rst",
+      "docs/source/license.rst",
+      "docs/source/publications.rst",
+      "docs/source/quickinstall.rst",
+      "docs/source/api/cell.rst",
+      "docs/source/api/cellfill.rst",
+      "docs/source/api/cmfd.rst",
+      "docs/source/api/cpulssolver.rst",
+      "docs/source/api/cpusolver.rst",
+      "docs/source/api/geometry.rst",
+      "docs/source/api/gpusolver.rst",
+      "docs/source/api/halfspace.rst",
+      "docs/source/api/index.rst",
+      "docs/source/api/lattice.rst",
+      "docs/source/api/log.rst",
+      "docs/source/api/material.rst",
+      "docs/source/api/pairwisesum.rst",
+      "docs/source/api/plane.rst",
+      "docs/source/api/point.rst",
+      "docs/source/api/quadrature.rst",
+      "docs/source/api/region.rst",
+      "docs/source/api/segment.rst",
+      "docs/source/api/solver.rst",
+      "docs/source/api/surface.rst",
+      "docs/source/api/timer.rst",
+      "docs/source/api/track.rst",
+      "docs/source/api/trackgenerator.rst",
+      "docs/source/api/trackgenerator3D.rst",
+      "docs/source/api/universe.rst",
+      "docs/source/api/vectorizedsolver.rst",
+      "docs/source/api/xplane.rst",
+      "docs/source/api/yplane.rst",
+      "docs/source/api/zcylinder.rst",
+      "docs/source/api/zplane.rst",
+      "docs/source/devguide/build_system.rst",
+      "docs/source/devguide/debugging.rst",
+      "docs/source/devguide/documentation.rst",
+      "docs/source/devguide/index.rst",
+      "docs/source/devguide/software_design.rst",
+      "docs/source/devguide/style_guide.rst",
+      "docs/source/devguide/swig.rst",
+      "docs/source/devguide/work_flow.rst",
+      "docs/source/doxygen/api.rst"
+    ],
+    "config": []
+  },
+  "licence_class": "A",
+  "licence_id": "MIT",
+  "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+  "licence_class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+  "wall_seconds": 236.6,
+  "check_summary": {
+    "01_loc_file_counts": "MEASURED",
+    "02_licence_detection": "MEASURED",
+    "03_dependency_scan": "MEASURED",
+    "04_sbom": "MEASURED",
+    "05_git_health": "MEASURED",
+    "06_security_config_owasp_llm_top10": "MEASURED",
+    "07_security_config_owasp_top10": "MEASURED",
+    "08_soc1": "MEASURED",
+    "09_soc2_typeii": "MEASURED",
+    "10_nist_ai_rmf": "MEASURED",
+    "11_nist_sp800_53": "MEASURED",
+    "12_nist_csf": "MEASURED",
+    "13_fedramp": "MEASURED",
+    "14_pci_dss": "MEASURED",
+    "15_iso27001": "MEASURED",
+    "16_mitre_attack_mapping": "MEASURED",
+    "17_ml_trl_readiness": "MEASURED",
+    "00_shape_k_graphrag": "PASS"
+  },
+  "failures": [],
+  "independent_facts": {
+    "total_files_in_tree": 688,
+    "total_loc": 70824,
+    "primary_language": "C++",
+    "head_sha": "c9ac4e1ecc9c",
+    "head_date": "2024-07-18T18:03:10-06:00",
+    "remote_url": "https://github.com/mit-crpg/openmoc",
+    "sbom_components": 99,
+    "declared_packages": 33,
+    "trl_level": 7,
+    "licence_file": "LICENSE",
+    "licence_sha256_16": "45a1484e5baaf95f"
+  },
+  "project_fingerprint_sha256": "39f0bdd9cbb6741f69933af4a9aa8deeac2281c04903ee23ab464b26826efed9",
+  "fingerprint_note": "sha256 of this project's own measured body with its own name and category normalised out; identical fingerprints between two projects would mean templated data"
+}

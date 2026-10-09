@@ -1,0 +1,1144 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:bc7053d5-0000-0000-4000-0f2400dbd34f",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-05T14:25:37Z",
+  "tools": [
+   {
+    "vendor": "anticloud",
+    "name": "bench15_from_tree",
+    "version": "1.0"
+   }
+  ],
+  "component": {
+   "type": "application",
+   "name": "OPENMOC",
+   "version": "c9ac4e1ecc9c",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:sbom:method",
+    "value": "manifest scan of the real cloned working tree"
+   },
+   {
+    "name": "anticloud:licence_class",
+    "value": "A"
+   },
+   {
+    "name": "anticloud:upstream",
+    "value": "https://github.com/mit-crpg/openmoc"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "The",
+   "group": "pypi",
+   "version": "setup script for OpenMOC",
+   "purl": "pkg:pypi/The",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "import",
+   "group": "pypi",
+   "version": "os, shutil, site, string, sys",
+   "purl": "pkg:pypi/import",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "from",
+   "group": "pypi",
+   "version": "distutils.errors import DistutilsOptionError",
+   "purl": "pkg:pypi/from",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "with_setuptools",
+   "group": "pypi",
+   "version": "= False",
+   "purl": "pkg:pypi/with_setuptools",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "if",
+   "group": "pypi",
+   "version": "'USE_SETUPTOOLS' in os.environ or 'pip' in __file__:",
+   "purl": "pkg:pypi/if",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "else",
+   "group": "pypi",
+   "version": ":",
+   "purl": "pkg:pypi/else",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config",
+   "group": "pypi",
+   "version": "= config.configuration()",
+   "purl": "pkg:pypi/config",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "class",
+   "group": "pypi",
+   "version": "custom_install(install):",
+   "purl": "pkg:pypi/class",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "This",
+   "group": "pypi",
+   "version": "class derives from the distutils.command.install class. Distutils",
+   "purl": "pkg:pypi/This",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "provides",
+   "group": "pypi",
+   "version": "a set of flags which may be invoked by the user at compile",
+   "purl": "pkg:pypi/provides",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "time.",
+   "group": "pypi",
+   "version": "The custom_install class adds to that list a series of options",
+   "purl": "pkg:pypi/time.",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "which",
+   "group": "pypi",
+   "version": "are useful in compiling a specific distribution of OpenMOC.",
+   "purl": "pkg:pypi/which",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "To",
+   "group": "pypi",
+   "version": "view a list of available compile time options, simply type the following",
+   "purl": "pkg:pypi/To",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "python",
+   "group": "pypi",
+   "version": "setup.py install --help",
+   "purl": "pkg:pypi/python",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "line",
+   "group": "pypi",
+   "version": "and uses them to populate the config.configurations class. The",
+   "purl": "pkg:pypi/line",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "configurations",
+   "group": "pypi",
+   "version": "class then uses these options to generate the Python",
+   "purl": "pkg:pypi/configurations",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "setup",
+   "group": "pypi",
+   "version": "method at the end of this script.",
+   "purl": "pkg:pypi/setup",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "Developers",
+   "group": "pypi",
+   "version": "wishing to extend OpenMOC's functionality with new compilation",
+   "purl": "pkg:pypi/Developers",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "options",
+   "group": "pypi",
+   "version": "will need to extend this class and the configurations class.",
+   "purl": "pkg:pypi/options",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "user_options",
+   "group": "pypi",
+   "version": "= [",
+   "purl": "pkg:pypi/user_options",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "boolean_options",
+   "group": "pypi",
+   "version": "= ['debug-mode',",
+   "purl": "pkg:pypi/boolean_options",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "def",
+   "group": "pypi",
+   "version": "initialize_options(self):",
+   "purl": "pkg:pypi/def",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "By",
+   "group": "pypi",
+   "version": "default, this will build the main openmoc C/C++ Python extension using",
+   "purl": "pkg:pypi/By",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "the",
+   "group": "pypi",
+   "version": "GCC compiler with single precision (default).",
+   "purl": "pkg:pypi/the",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "install.initialize_options",
+   "group": "pypi",
+   "version": "(self)",
+   "purl": "pkg:pypi/install.initialize_options",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.cc",
+   "group": "pypi",
+   "version": "= 'gcc'",
+   "purl": "pkg:pypi/self.cc",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.fp",
+   "group": "pypi",
+   "version": "= 'single'",
+   "purl": "pkg:pypi/self.fp",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.ng",
+   "group": "pypi",
+   "version": "= None",
+   "purl": "pkg:pypi/self.ng",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.with_cuda",
+   "group": "pypi",
+   "version": "= False",
+   "purl": "pkg:pypi/self.with_cuda",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.debug_mode",
+   "group": "pypi",
+   "version": "= False",
+   "purl": "pkg:pypi/self.debug_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.sanitizer_mode",
+   "group": "pypi",
+   "version": "= False",
+   "purl": "pkg:pypi/self.sanitizer_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.profile_mode",
+   "group": "pypi",
+   "version": "= False",
+   "purl": "pkg:pypi/self.profile_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.coverage_mode",
+   "group": "pypi",
+   "version": "= False",
+   "purl": "pkg:pypi/self.coverage_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.with_ccache",
+   "group": "pypi",
+   "version": "= False",
+   "purl": "pkg:pypi/self.with_ccache",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "swigLocation",
+   "group": "pypi",
+   "version": "= shutil.which('swig')",
+   "purl": "pkg:pypi/swigLocation",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "print",
+   "group": "pypi",
+   "version": "(\"-> Please install swig before building <-\")",
+   "purl": "pkg:pypi/print",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "sys.exit",
+   "group": "pypi",
+   "version": "()",
+   "purl": "pkg:pypi/sys.exit",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "configurations.setup_extension_modules",
+   "group": "pypi",
+   "version": "class method which creates",
+   "purl": "pkg:pypi/configurations.setup_extension_modules",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "install.finalize_options",
+   "group": "pypi",
+   "version": "(self)",
+   "purl": "pkg:pypi/install.finalize_options",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.num_groups",
+   "group": "pypi",
+   "version": "= self.ng",
+   "purl": "pkg:pypi/config.num_groups",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.with_cuda",
+   "group": "pypi",
+   "version": "= self.with_cuda",
+   "purl": "pkg:pypi/config.with_cuda",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.debug_mode",
+   "group": "pypi",
+   "version": "= self.debug_mode",
+   "purl": "pkg:pypi/config.debug_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.sanitizer_mode",
+   "group": "pypi",
+   "version": "= self.sanitizer_mode",
+   "purl": "pkg:pypi/config.sanitizer_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.profile_mode",
+   "group": "pypi",
+   "version": "= self.profile_mode",
+   "purl": "pkg:pypi/config.profile_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.coverage_mode",
+   "group": "pypi",
+   "version": "= self.coverage_mode",
+   "purl": "pkg:pypi/config.coverage_mode",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.with_ccache",
+   "group": "pypi",
+   "version": "= self.with_ccache",
+   "purl": "pkg:pypi/config.with_ccache",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "raise",
+   "group": "pypi",
+   "version": "DistutilsOptionError \\",
+   "purl": "pkg:pypi/raise",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.cc",
+   "group": "pypi",
+   "version": "= self.cc",
+   "purl": "pkg:pypi/config.cc",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.fp",
+   "group": "pypi",
+   "version": "= self.fp",
+   "purl": "pkg:pypi/config.fp",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "config.setup_extension_modules",
+   "group": "pypi",
+   "version": "()",
+   "purl": "pkg:pypi/config.setup_extension_modules",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "in",
+   "group": "pypi",
+   "version": "the compiler flags (ie, '-DGCC', '-DNVCC', etc), or on the",
+   "purl": "pkg:pypi/in",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "source",
+   "group": "pypi",
+   "version": "extension (ie, *.cpp, *.cu, etc.).",
+   "purl": "pkg:pypi/source",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "Adapted",
+   "group": "pypi",
+   "version": "from Robert McGibbon's CUDA distutils setup provided in open source",
+   "purl": "pkg:pypi/Adapted",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "form",
+   "group": "pypi",
+   "version": "here: https://github.com/rmcgibbo/npcuda-example",
+   "purl": "pkg:pypi/form",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.src_extensions.append",
+   "group": "pypi",
+   "version": "('.cu')",
+   "purl": "pkg:pypi/self.src_extensions.append",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "super_compile",
+   "group": "pypi",
+   "version": "= self._compile",
+   "purl": "pkg:pypi/super_compile",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.set_executable",
+   "group": "pypi",
+   "version": "('compiler_so', 'ccache gcc')",
+   "purl": "pkg:pypi/self.set_executable",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "postargs",
+   "group": "pypi",
+   "version": "= config.compiler_flags['gcc']",
+   "purl": "pkg:pypi/postargs",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "elif",
+   "group": "pypi",
+   "version": "config.cc == 'mpicc' and os.path.splitext(src)[1] == '.cpp':",
+   "purl": "pkg:pypi/elif",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self._compile",
+   "group": "pypi",
+   "version": "= _compile",
+   "purl": "pkg:pypi/self._compile",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "of",
+   "group": "pypi",
+   "version": "the output shared library filename (ie, _openmoc_intel_single.so)",
+   "purl": "pkg:pypi/of",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "super_link",
+   "group": "pypi",
+   "version": "= self.link",
+   "purl": "pkg:pypi/super_link",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "output_dir",
+   "group": "pypi",
+   "version": "=None, libraries=None,",
+   "purl": "pkg:pypi/output_dir",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "library_dirs",
+   "group": "pypi",
+   "version": "=None, runtime_library_dirs=None,",
+   "purl": "pkg:pypi/library_dirs",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "export_symbols",
+   "group": "pypi",
+   "version": "=None, debug=0, extra_preargs=None,",
+   "purl": "pkg:pypi/export_symbols",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "extra_postargs",
+   "group": "pypi",
+   "version": "=None, build_temp=None, target_lang=None):",
+   "purl": "pkg:pypi/extra_postargs",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "output_filename",
+   "group": "pypi",
+   "version": ", output_dir, libraries,",
+   "purl": "pkg:pypi/output_filename",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self.link",
+   "group": "pypi",
+   "version": "= link",
+   "purl": "pkg:pypi/self.link",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "include_dirs",
+   "group": "pypi",
+   "version": "=None, debug=0, extra_preargs=None,",
+   "purl": "pkg:pypi/include_dirs",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "Note",
+   "group": "pypi",
+   "version": "that this routine is modified from StackOverflow post #11013851",
+   "purl": "pkg:pypi/Note",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "macros",
+   "group": "pypi",
+   "version": ", objects, extra_postargs, pp_opts, build = \\",
+   "purl": "pkg:pypi/macros",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "self._setup_compile",
+   "group": "pypi",
+   "version": "(output_dir, macros, include_dirs,",
+   "purl": "pkg:pypi/self._setup_compile",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "sources",
+   "group": "pypi",
+   "version": ", depends, extra_postargs)",
+   "purl": "pkg:pypi/sources",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "cc_args",
+   "group": "pypi",
+   "version": "= self._get_cc_args(pp_opts, debug, extra_preargs)",
+   "purl": "pkg:pypi/cc_args",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "num_cpus",
+   "group": "pypi",
+   "version": "= multiprocessing.cpu_count()",
+   "purl": "pkg:pypi/num_cpus",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "try",
+   "group": "pypi",
+   "version": ": src, ext = build[obj]",
+   "purl": "pkg:pypi/try",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "except",
+   "group": "pypi",
+   "version": "KeyError: return",
+   "purl": "pkg:pypi/except",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "list",
+   "group": "pypi",
+   "version": "(pool.ThreadPool(num_cpus).map(_single_compile, objects))",
+   "purl": "pkg:pypi/list",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "return",
+   "group": "pypi",
+   "version": "objects",
+   "purl": "pkg:pypi/return",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "distutils.ccompiler.CCompiler.compile",
+   "group": "pypi",
+   "version": "=parallel_compile",
+   "purl": "pkg:pypi/distutils.ccompiler.CCompiler.compile",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "It",
+   "group": "pypi",
+   "version": "extends build_ex by creates customized compile and link methods",
+   "purl": "pkg:pypi/It",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "customize_compiler",
+   "group": "pypi",
+   "version": "(self.compiler)",
+   "purl": "pkg:pypi/customize_compiler",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "customize_linker",
+   "group": "pypi",
+   "version": "(self.compiler)",
+   "purl": "pkg:pypi/customize_linker",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "swig_flags",
+   "group": "pypi",
+   "version": "= config.swig_flags + ['-D' + config.cc.upper()]",
+   "purl": "pkg:pypi/swig_flags",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "os.system",
+   "group": "pypi",
+   "version": "('swig {0} -o '.format(str.join(' ', swig_flags)) + \\",
+   "purl": "pkg:pypi/os.system",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "build_ext.build_extensions",
+   "group": "pypi",
+   "version": "(self)",
+   "purl": "pkg:pypi/build_ext.build_extensions",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "dist",
+   "group": "pypi",
+   "version": "= setup(name = 'openmoc',",
+   "purl": "pkg:pypi/dist",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "version",
+   "group": "pypi",
+   "version": "= '0.4.0',",
+   "purl": "pkg:pypi/version",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "description",
+   "group": "pypi",
+   "version": "= 'An open source method of characteristics code for ' + \\",
+   "purl": "pkg:pypi/description",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "url",
+   "group": "pypi",
+   "version": "= 'https://github.com/mit-crpg/OpenMOC',",
+   "purl": "pkg:pypi/url",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "download_url",
+   "group": "pypi",
+   "version": "= 'https://github.com/mit-crpg/OpenMOC/tarball/v0.4.0',",
+   "purl": "pkg:pypi/download_url",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "ext_modules",
+   "group": "pypi",
+   "version": "= config.extensions,",
+   "purl": "pkg:pypi/ext_modules",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "packages",
+   "group": "pypi",
+   "version": "= config.packages,",
+   "purl": "pkg:pypi/packages",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "package_data",
+   "group": "pypi",
+   "version": "= {'' : ['*.i*']},",
+   "purl": "pkg:pypi/package_data",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "cmdclass",
+   "group": "pypi",
+   "version": "={ 'build_ext': custom_build_ext,",
+   "purl": "pkg:pypi/cmdclass",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "build_py",
+   "group": "pypi",
+   "version": "= build_py(dist)",
+   "purl": "pkg:pypi/build_py",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "build_py.ensure_finalized",
+   "group": "pypi",
+   "version": "()",
+   "purl": "pkg:pypi/build_py.ensure_finalized",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "build_py.run",
+   "group": "pypi",
+   "version": "()",
+   "purl": "pkg:pypi/build_py.run",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "install_location",
+   "group": "pypi",
+   "version": "= site.getsitepackages()[0]",
+   "purl": "pkg:pypi/install_location",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  }
+ ],
+ "component_count": 99,
+ "languages_detected": {
+  "C++": 38281,
+  "Python": 19589,
+  "C/C++ Header": 7423,
+  "reStructuredText": 5043,
+  "Make": 359,
+  "Text": 62,
+  "Shell": 48,
+  "Dockerfile": 19
+ }
+}
