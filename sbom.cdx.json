@@ -1,0 +1,74 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:ae03493a-6770-5bd6-9ae7-e0978f2b8abc",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T16:25:58Z",
+    "component": {
+      "type": "application",
+      "name": "OPENMOC",
+      "version": "c9ac4e1ecc9c",
+      "bom-ref": "pkg:generic/anticloud/OPENMOC@c9ac4e1ecc9c",
+      "purl": "pkg:generic/anticloud/OPENMOC@c9ac4e1ecc9c",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "c9ac4e1ecc9c13bacb44fd470f7fce8c9355606f"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/mit-crpg/openmoc"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "cc",
+      "version": "=",
+      "purl": "pkg:pypi/cc@",
+      "bom-ref": "pypi/cc@="
+    },
+    {
+      "type": "library",
+      "name": "fp",
+      "version": "=",
+      "purl": "pkg:pypi/fp@",
+      "bom-ref": "pypi/fp@="
+    },
+    {
+      "type": "library",
+      "name": "ng",
+      "version": "=",
+      "purl": "pkg:pypi/ng@",
+      "bom-ref": "pypi/ng@="
+    },
+    {
+      "type": "library",
+      "name": "-",
+      "version": "> Please install swig before building <-",
+      "purl": "pkg:pypi/-@Please install swig before building <-",
+      "bom-ref": "pypi/-@> Please install swig before building <-"
+    },
+    {
+      "type": "library",
+      "name": "openmoc",
+      "version": "unspecified",
+      "purl": "pkg:pypi/openmoc",
+      "bom-ref": "pypi/openmoc@unspecified"
+    }
+  ]
+}
