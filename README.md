@@ -2,9 +2,7 @@
 
 > OpenMOC .. image:: https://api.travis-ci.org/mit-crpg/OpenMOC.svg?branch=develop :target: https://travis-ci.org/mit-crpg/OpenMOC .. image:: https://coveralls.io/repos/github/mit-crpg/OpenMOC/badge.svg?branch=develop :target: https://coveralls.io/github/mit-crpg/OpenMOC?branch=develop .. image:: https://img.shields.io/badge/powered%20by-OpenMOC-blue.svg :target: https://mit-crpg.github.io/OpenMOC/ .. image:: https://img.shields.io/badge/pypi-v0.4.0-orange.svg :target: https://pypi.python.org/pypi/openmoc/0.4.0
 
-**Category:** NUCLEAR · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/checkr/openmock · **Pinned commit:** `377ef79c2f820730824abda160a5a11161470e8a` · **Vendor:** Anticloud FZ LLE
-
-> **Note:** this package vendors `https://github.com/checkr/openmock` as the implementation for the `OPENMOC` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
+**Category:** NUCLEAR · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/mit-crpg/OpenMOC · **Pinned commit:** `c9ac4e1ecc9c13bacb44fd470f7fce8c9355606f` · **Vendor:** Anticloud FZ LLE
 
 ## What This Project Is
 
@@ -62,7 +60,7 @@ The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The 
 SHA3-256 of `BENCH.json`:
 
 ```
-352d9c124d3f7eb76d579ea0dac6b20eb1eda6505eff7231d4061098a6ff2644
+2bb5b7aeff1428dfa490cb3a4706116bdb1c15eadfe22d27b25fdeb32a8b1c2e
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.

@@ -540,10 +540,10 @@
  "version": "1.0.0",
  "source": {
   "git": {
-   "head": "377ef79c2f820730824abda160a5a11161470e8a",
-   "url": "https://github.com/checkr/openmock",
-   "branch": "master",
-   "sha_verified_from": "GitHub API commits/master | unified 2026-10-14 (API-exists + content/clone anchor)"
+   "url": "https://github.com/mit-crpg/OpenMOC",
+   "head": "c9ac4e1ecc9c13bacb44fd470f7fce8c9355606f",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/checkr/openmock"
   }
  }
 }
